@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="400" height="300" viewBox="0 0 400 300" xmlns="http://www.w3.org/2000/svg">
+  <!-- Background -->
+  <defs>
+    <radialGradient id="bgGradient" cx="50%" cy="50%" r="70%">
+      <stop offset="0%" style="stop-color:#FFD700;stop-opacity:0.3"/>
+      <stop offset="100%" style="stop-color:#FF6B35;stop-opacity:0.1"/>
+    </radialGradient>
+    
+    <!-- Sparkle animation -->
+    <g id="sparkle">
+      <polygon points="12,5 14,10 19,10 15,13 17,18 12,15 7,18 9,13 5,10 10,10" fill="#FFD700"/>
+    </g>
+  </defs>
+  
+  <rect width="400" height="300" fill="url(#bgGradient)"/>
+  
+  <!-- Main trophy/star -->
+  <g transform="translate(200,100)">
+    <circle cx="0" cy="0" r="50" fill="#FFD700" opacity="0.2"/>
+    <polygon points="0,-40 12,-12 40,-12 20,8 32,36 0,20 -32,36 -20,8 -40,-12 -12,-12" 
+             fill="#FFD700" stroke="#FF6B35" stroke-width="3"/>
+    <circle cx="0" cy="0" r="15" fill="#FF6B35"/>
+  </g>
+  
+  <!-- Confetti particles -->
+  <rect x="50" y="50" width="8" height="8" fill="#FF6B35" transform="rotate(45 54 54)"/>
+  <rect x="320" y="80" width="6" height="6" fill="#FFD700" transform="rotate(30 323 83)"/>
+  <rect x="100" y="200" width="10" height="10" fill="#FF1744" transform="rotate(60 105 205)"/>
+  <rect x="350" y="180" width="7" height="7" fill="#00E676" transform="rotate(15 353.5 183.5)"/>
+  <rect x="80" y="120" width="9" height="9" fill="#2196F3" transform="rotate(75 84.5 124.5)"/>
+  <rect x="340" y="220" width="8" height="8" fill="#FF6B35" transform="rotate(20 344 224)"/>
+  
+  <!-- Sparkles around the main star -->
+  <use href="#sparkle" transform="translate(120,60) scale(0.8)" opacity="0.8"/>
+  <use href="#sparkle" transform="translate(280,70) scale(0.6)" opacity="0.9"/>
+  <use href="#sparkle" transform="translate(150,180) scale(0.7)" opacity="0.7"/>
+  <use href="#sparkle" transform="translate(290,160) scale(0.9)" opacity="0.8"/>
+  <use href="#sparkle" transform="translate(110,140) scale(0.5)" opacity="0.6"/>
+  
+  <!-- Text area background -->
+  <rect x="50" y="220" width="300" height="60" rx="10" fill="rgba(255,255,255,0.9)" stroke="#FFD700" stroke-width="2"/>
+  
+  <!-- Level up text -->
+  <text x="200" y="245" text-anchor="middle" font-family="Arial, sans-serif" font-size="20" font-weight="bold" fill="#FF6B35">
+    LEVEL UP!
+  </text>
+  <text x="200" y="265" text-anchor="middle" font-family="Arial, sans-serif" font-size="16" fill="#333">
+    Congratulations on your achievement!
+  </text>
+</svg>
